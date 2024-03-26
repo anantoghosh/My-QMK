@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #pragma once
-
+#undef VIAL_COMBO_ENABLE
 /* VIAL UID for Lily58*/
 #define VIAL_KEYBOARD_UID {0x7E, 0xFD, 0xFC, 0x5B, 0x7D, 0x39, 0x48, 0x06}
 
@@ -29,11 +29,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Space reduction */
 
-#define DYNAMIC_KEYMAP_LAYER_COUNT 6
+#define DYNAMIC_KEYMAP_LAYER_COUNT 8
+#define DYNAMIC_KEYMAP_MACRO_COUNT 30
 #define VIAL_TAP_DANCE_ENTRIES 4
 #undef LOCKING_SUPPORT_ENABLE
 #undef LOCKING_RESYNC_ENABLE
-#define NO_ACTION_ONESHOT
 
 /* Select hand configuration */
 
@@ -43,7 +43,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define USE_SERIAL_PD2
 
-#define TAPPING_FORCE_HOLD
-#define TAPPING_TERM 100
+#define VIAL_COMBO_ENTRIES 20
+#define VIAL_KEY_OVERRIDE_ENTRIES 10
 
-
+// #define ADAPTIVE_KEYS_ENABLE
+#define ADAPTIVE_TERM (120)
