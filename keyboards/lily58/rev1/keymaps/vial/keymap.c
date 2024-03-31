@@ -17,6 +17,7 @@
 #include QMK_KEYBOARD_H
 #include <stdio.h>
 #include "skip_bigrams.h"
+#include "alt_tab.h"
 #include "adaptive_keys.h"
 #include "combos.h"
 
@@ -277,6 +278,10 @@ bool oled_task_user(void) {
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     if(!process_skip_bigrams(keycode, record)) {
+        return false;
+    }
+
+    if (!process_alt_tab(keycode, record)) {
         return false;
     }
 

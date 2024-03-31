@@ -22,3 +22,4 @@ CAPS_WORD_ENABLE = yes
 
 SRC += adaptive_keys.c
 SRC += skip_bigrams.c
+SRC += alt_tab.c
