@@ -16,33 +16,60 @@ static const uint16_t skip_bigram_pairs[][2] = {
     // more pairs could be specified here
 };
 
-static const uint8_t num_skip_bigram_pairs = sizeof(skip_bigram_pairs) / sizeof(skip_bigram_pairs[0]);
-
-bool skip_bigrams_mode = false;
+static const uint8_t skip_bigram_pairs_length = sizeof(skip_bigram_pairs) / sizeof(skip_bigram_pairs[0]);
+bool skip_bigram_mode = false;
 uint8_t skip_bigrams_pair_idx = 0;
 
-bool process_skip_bigrams(uint16_t keycode, keyrecord_t *record) {
+static inline bool pressed_first_bigram_key(uint16_t basic_keycode) {
 
+    for (uint8_t i = 0; i < skip_bigram_pairs_length; i++) {
+
+        if (basic_keycode == skip_bigram_pairs[i][0]) {
+            skip_bigrams_pair_idx = i;
+            return true;
+        }
+
+    }
+
+    return false;
+}
+
+static inline bool is_ignore_letter(uint16_t basic_keycode) {
+    switch (basic_keycode) {
+        case KC_A:
+        case KC_E:
+        case KC_O:
+        case KC_U:
+        case KC_I:
+        case KC_Y:
+            return true;
+        default:
+            return false;
+    }
+}
+
+bool process_skip_bigrams(uint16_t keycode, keyrecord_t *record) {
     if (record->event.pressed) {
         uint16_t basic_keycode = keycode & 0x00FF;
 
-        for (uint8_t i = 0; i < num_skip_bigram_pairs; i++) {
-            if (basic_keycode == skip_bigram_pairs[i][0]) {
-                skip_bigrams_pair_idx = i;
-                skip_bigrams_mode = true;
-                return true;
-            }
+        if (pressed_first_bigram_key(basic_keycode)) {
+            skip_bigram_mode = true;
+            return true;
         }
 
-        if (skip_bigrams_mode) {
-            if (basic_keycode == KC_A || basic_keycode == KC_E || basic_keycode == KC_O || basic_keycode == KC_U || basic_keycode == KC_I || basic_keycode == KC_Y) {
+        if (skip_bigram_mode) {
+
+            if (is_ignore_letter(basic_keycode)) {
                 return true;
-            } else if (keycode == BIGRAM_KEY) {
+            }
+
+            if (keycode == BIGRAM_KEY) {
                 tap_code16(skip_bigram_pairs[skip_bigrams_pair_idx][1]);
                 return false;
-            } else {
-                skip_bigrams_mode = false;
             }
+
+            skip_bigram_mode = false;
+
         }
 
     }
