@@ -1,24 +1,31 @@
-SUBS(txt_b12f3c,            "the", KC_T, KC_E)
-SUBS(txt_f5a1f7,           "that", KC_T, KC_A)
-SUBS(txt_f5a2f7,           "this", KC_T, KC_I)
-SUBS(txt_f5a3f7,          "there", KC_T, KC_H)
-SUBS(txt_f5a4f7,           "they", KC_T, KC_Y)
 
-SUBS(txt_a4eacd,            "and", KC_N, KC_A)
-SUBS(txt_f5a0c9,            "ent", KC_N, KC_E)
-SUBS(txt_f5a0f8,            "ing", KC_N, KC_I)
-SUBS(txt_f5a0f9,            "ion", KC_N, KC_O)
+SUBS(A101,              "au", KC_A, KC_H)
+SUBS(A102,              "ua", KC_U, KC_COMM)
 
-SUBS(txt_f5a3f9,             "sc", KC_S, KC_L)
+SUBS(A103,            "the ", KC_T, KC_E)
+SUBS(A104,            "that", KC_T, KC_A)
+SUBS(A105,           "this ", KC_T, KC_I)
+SUBS(A106,           "there", KC_T, KC_H)
+SUBS(A107,            "tion", KC_T, KC_O)
+SUBS(A108,           "they ", KC_T, KC_Y)
 
-SUBS(txt_4607a1,            "for", CK_F, KC_A)
-SUBS(txt_4607a4,             "fl", CK_F, CK_M)
+SUBS(A109,            "and ", KC_N, KC_A)
+SUBS(A110,             "ent", KC_N, KC_E)
+SUBS(A111,             "ing", KC_N, KC_I)
 
-SUBS(txt_4607a3,            "was", KC_W, KC_A)
-SUBS(txt_4637a3,           "will", KC_W, KC_I)
-SUBS(txt_4647a3,           "with", KC_W, KC_H)
-SUBS(txt_f5a2fA,         "would ", KC_W, KC_O)
+SUBS(A112,              "sc", KC_S, KC_L)
+SUBS(A113,            "sion", KC_S, KC_O)
+SUBS(A122,         "should ", KC_S, KC_H)
 
-SUBS(txt_f5a1fA,         "could ", KC_C, KC_O)
-SUBS(txt_f5a3fA,        "should ", KC_S, KC_O)
+SUBS(A114,              "fl", KC_F, KC_M)
+SUBS(A115,            "for ", CK_F, KC_A)
+SUBS(A116,              "gl", CK_G, CK_M)
+
+SUBS(A117,            "was ", KC_W, KC_A)
+SUBS(A118,           "will ", KC_W, KC_I)
+SUBS(A119,           "with ", KC_W, KC_H)
+SUBS(A120,          "would ", KC_W, KC_O)
+
+SUBS(A121,          "could ", KC_C, KC_O)
+
 

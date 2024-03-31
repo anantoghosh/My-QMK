@@ -48,3 +48,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // #define ADAPTIVE_KEYS_ENABLE
 #define ADAPTIVE_TERM (120)
+#define COMBO_TERM 70
