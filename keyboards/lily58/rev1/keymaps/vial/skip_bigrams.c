@@ -1,6 +1,7 @@
 
 /*
 Author: Ananto Ghosh github.com/anantoghosh
+Additional details at https://blog.mein.in/reducing-skip-bigrams-strain
 
 This feature aims to reduce the need for excessive finger movement when typing
 "2u Same finger bigrams" and "2u skip bigrams",
