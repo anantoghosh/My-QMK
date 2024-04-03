@@ -77,7 +77,7 @@ static inline bool pressed_first_bigram_key(uint16_t basic_keycode) {
 /*
 Function to determine which letters are ignored after pressing the first letter
 of a bigram.
-Eg. M > 0 > 0 > 0 > BIGRAM_KEY will type MOOOL. The Os do not affect the bigram mode.
+Eg. M > O > O > O > BIGRAM_KEY will type MOOOL. The Os do not affect the bigram mode.
 Here we are ignoring (a, e, i, o, u, y), i.e. the other hand keys in handsdown
 layout. Change it as per your layout needs.
 */
