@@ -33,7 +33,7 @@ M > O > O > O > BIGRAM_KEY will type MOOOL.
 /*
 The trigger Keycode.
 Define a keycode for typing the second letter of the bigram.
-You can place this key is a lesser used position in your layout.
+You can place this key in a lesser used position in your layout.
 */
 #define BIGRAM_KEY KC_F17
 
