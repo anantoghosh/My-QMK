@@ -29,23 +29,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Space reduction */
 
-#define DYNAMIC_KEYMAP_LAYER_COUNT 8
+#define DYNAMIC_KEYMAP_LAYER_COUNT 12
 #define DYNAMIC_KEYMAP_MACRO_COUNT 30
 #define VIAL_TAP_DANCE_ENTRIES 4
 #undef LOCKING_SUPPORT_ENABLE
 #undef LOCKING_RESYNC_ENABLE
 
 /* Select hand configuration */
-
-#define MASTER_LEFT
-// #define MASTER_RIGHT
-// #define EE_HANDS
+#define EE_HANDS
 
 #define USE_SERIAL_PD2
 
 #define VIAL_COMBO_ENTRIES 20
 #define VIAL_KEY_OVERRIDE_ENTRIES 10
 
-// #define ADAPTIVE_KEYS_ENABLE
+
+#define ADAPTIVE_KEYS_ENABLE
 #define ADAPTIVE_TERM (120)
-#define COMBO_TERM 70
+#define COMBO_TERM 50 // overriden in vial
+#define SKIP_BIGRAMS_KEY_ENABLE

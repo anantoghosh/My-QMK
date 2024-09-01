@@ -1,31 +1,58 @@
 
-SUBS(A101,              "au", KC_A, KC_H)
-SUBS(A102,              "ua", KC_U, KC_COMM)
 
-SUBS(A103,            "the ", KC_T, KC_E)
+SUBS(A001,              "qu", KC_F, KC_W)
+SUBS(A002,               "z", KC_F, KC_P)
+SUBS(A002A,             "lk", KC_L, KC_U)
+
+SUBS(A103,             "the", KC_T, KC_E)
 SUBS(A104,            "that", KC_T, KC_A)
-SUBS(A105,           "this ", KC_T, KC_I)
+SUBS(A105,            "this", KC_T, KC_S)
 SUBS(A106,           "there", KC_T, KC_H)
-SUBS(A107,            "tion", KC_T, KC_O)
-SUBS(A108,           "they ", KC_T, KC_Y)
+SUBS(A107,            "tion", KC_T, KC_N)
+SUBS(A108,            "they", KC_T, KC_Y)
+SUBS(A108A,          "their", KC_T, KC_R)
+SUBS(A108B,           "them", KC_T, CK_M)
+SUBS(A108C,          "thing", KC_T, KC_J)
 
-SUBS(A109,            "and ", KC_N, KC_A)
+SUBS(A109,             "and", KC_N, KC_A)
 SUBS(A110,             "ent", KC_N, KC_E)
 SUBS(A111,             "ing", KC_N, KC_I)
 
-SUBS(A112,              "sc", KC_S, KC_L)
-SUBS(A113,            "sion", KC_S, KC_O)
-SUBS(A122,         "should ", KC_S, KC_H)
+SUBS(A112,              "sc", KC_S, KC_R)
+SUBS(A113,            "sion", KC_S, KC_N)
+SUBS(A113A,         "should", KC_S, KC_H)
+SUBS(A113B,           "some", KC_S, KC_E)
 
-SUBS(A114,              "fl", KC_F, KC_M)
-SUBS(A115,            "for ", CK_F, KC_A)
-SUBS(A116,              "gl", CK_G, CK_M)
+SUBS(A115,             "for", KC_F, KC_N)
+SUBS(A1151,           "from", KC_F, KC_E)
 
-SUBS(A117,            "was ", KC_W, KC_A)
-SUBS(A118,           "will ", KC_W, KC_I)
-SUBS(A119,           "with ", KC_W, KC_H)
-SUBS(A120,          "would ", KC_W, KC_O)
+SUBS(A117A,           "what", KC_W, KC_T)
+SUBS(A117,             "was", KC_W, KC_S)
+SUBS(A118,            "will", KC_W, KC_I)
+SUBS(A119,            "with", KC_W, KC_N)
+SUBS(A120,           "would", KC_W, KC_H)
+SUBS(A120A,          "which", KC_W, KC_Y)
+SUBS(A124,           "where", KC_W, KC_E)
 
-SUBS(A121,          "could ", KC_C, KC_O)
+SUBS(A121,           "could", CK_C, KC_H)
+SUBS(A121A,            "can", CK_C, KC_N)
+SUBS(A121B,             "ck", CK_C, CK_M)
+SUBS(A121C,           "come", CK_C, KC_E)
+
+SUBS(A122,            "ight", KC_I, KC_T)
+SUBS(A123,            "have", KC_H, KC_A)
 
 
+SUBS(A126,             "you", KC_Y, KC_N)
+SUBS(A126A,           "your", KC_Y, KC_R)
+SUBS(A126B,         "you're", KC_Y, KC_R, KC_S)
+
+SUBS(A127,            "like", KC_L, KC_I)
+
+SUBS(A129,             "but", KC_B, KC_N)
+SUBS(A130,         "because", KC_B, KC_E)
+SUBS(A130A,         "become", KC_B, KC_U)
+
+SUBS(A131,            "know", KC_K, KC_T)
+
+SUBS(A132,           "about", KC_A, KC_U)

@@ -1,9 +1,15 @@
-#define CK_F LGUI_T(KC_F)
-#define CK_M LALT_T(KC_M)
-#define CK_G LCTL_T(KC_G)
-#define CK_DOT LCTL_T(KC_DOT)
-// Keymap helpers
+// Simplify using the mod keys
+#define CK_Z LGUI_T(KC_Z)
+#define CK_X LSFT_T(KC_X)
+#define CK_C LALT_T(KC_C)
+#define CK_V LCTL_T(KC_V)
 
+#define CK_SLASH RGUI_T(KC_SLASH)
+#define CK_DOT RSFT_T(KC_DOT)
+#define CK_COMMA RALT_T(KC_COMMA)
+#define CK_M RCTL_T(KC_M)
+
+// Keymap helpers
 #define K_ENUM(name, key, ...) name,
 #define K_DATA(name, key, ...) const uint16_t PROGMEM cmb_##name[] = {__VA_ARGS__, COMBO_END};
 #define K_COMB(name, key, ...) [name] = COMBO(cmb_##name, key),

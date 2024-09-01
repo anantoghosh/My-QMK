@@ -90,6 +90,7 @@ static inline bool is_ignore_letter(uint16_t basic_keycode) {
         case KC_U:
         case KC_I:
         case KC_Y:
+        case KC_P:
             return true;
         default:
             return false;

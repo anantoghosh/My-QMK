@@ -7,6 +7,7 @@ COMMAND_ENABLE = no
 CONSOLE_ENABLE = no
 LTO_ENABLE = no
 
+NKRO_ENABLE = yes
 VIA_ENABLE = yes
 VIAL_ENABLE = yes
 VIAL_INSECURE = yes
@@ -19,6 +20,8 @@ EXTRAKEY_ENABLE = yes
 TAP_DANCE_ENABLE = yes
 COMBO_ENABLE = yes
 CAPS_WORD_ENABLE = yes
+
+USE_CCACHE = yes
 
 SRC += adaptive_keys.c
 SRC += skip_bigrams.c
